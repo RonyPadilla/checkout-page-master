@@ -1,11 +1,14 @@
 import "../style/checkot.css";
-import { BsFillTelephoneFill, BsFillEnvelopeFill } from "react-icons/bs";
+import { BsFillTelephoneFill, BsFillEnvelopeFill, BsFillHouseDoorFill, BsFillBuildingsFill } from "react-icons/bs";
+import { BiSolidUserCircle } from "react-icons/bi";
+import { ImEarth } from "react-icons/im";
+import { MdMarkunreadMailbox } from "react-icons/md";
 
 const Checkot = () => {
   return (
     <>
       <section className="contact">
-        <h1>Checkot</h1>
+        <h1 className="title-contact">Checkot</h1>
         <h2>Contact information</h2>
 
         <form action="#">
@@ -25,19 +28,19 @@ const Checkot = () => {
 
           <label>Full name</label>
           <div className="input-contact">
-            <BsFillTelephoneFill className="icon-contact" />
+            <BiSolidUserCircle style={ {fontSize: '25px'}} className="icon-contact" />
             <input type="text" name="input" placeholder="Your name..." />
           </div>
 
           <label>Address</label>
           <div className="input-contact">
-            <BsFillTelephoneFill className="icon-contact" />
+            <BsFillHouseDoorFill style={ {fontSize: '25px'}} className="icon-contact" />
             <input type="text" name="input" placeholder="Your address..." />
           </div>
 
           <label>City</label>
           <div className="input-contact">
-            <BsFillTelephoneFill className="icon-contact" />
+            <BsFillBuildingsFill className="icon-contact" />
             <input type="text" name="input" placeholder="Your city..." />
           </div>
 
@@ -45,7 +48,7 @@ const Checkot = () => {
             <div>
               <label>Country</label>
               <div className="input-country">
-                <BsFillTelephoneFill className="icon-contact" />
+                <ImEarth style={ {fontSize: '25px'}} className="icon-contact" />
                 <input type="text" name="input" placeholder="Your country..." />
               </div>
             </div>
@@ -53,7 +56,7 @@ const Checkot = () => {
             <div>
               <label>Postal code</label>
               <div className="input-country">
-                <BsFillTelephoneFill className="icon-contact" />
+                <MdMarkunreadMailbox style={ {fontSize: '25px'}} className="icon-contact" />
                 <input
                   type="text"
                   name="input"
@@ -62,12 +65,13 @@ const Checkot = () => {
               </div>
             </div>
           </section>
-          <div>
-            <input type="checkbox" /> 
-          <label>Save this information for next time</label>
+            <div style={{marginTop: '15px'}}>
+            <input type="checkbox"  style={ {transform: 'scale(1.6)',marginLeft: '5px', marginRight: '10px'}}/> 
+            <label>Save this information for next time</label>
           </div>
           
           <button className="button-continue">Continue</button>
+          
         </form>
       </section>
     </>

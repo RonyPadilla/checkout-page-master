@@ -3,6 +3,13 @@
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+  margin-left: 15vw;
+  margin-right: 8vw;
+  margin-top: -5%;
+}
+
+.title-contact{
+  margin-bottom: 5%;
 }
 
 .icon-contact {
@@ -61,6 +68,7 @@
 .button-continue {
   float: right;
   margin-right: 30px;
+  margin-top: 30px;
   width: 166px;
   height: 54px;
   border-radius: 12px;

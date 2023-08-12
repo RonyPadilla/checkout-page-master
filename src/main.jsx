@@ -7,8 +7,11 @@ import { Products } from './components/Products.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Checkot/>
-    <Footer/>
+    <section className='content'>
+      <Checkot/>
     <Products/>
+    </section>
+    
+    <Footer/>
   </React.StrictMode>,
 )
