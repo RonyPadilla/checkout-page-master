@@ -53,48 +53,55 @@ export const Products = () => {
     <>
       <section className="products">
         <div className="products-div">
-          {products.map((product) => (
-            <div key={product.id} className="product-tag">
-              <div>
-                <img
-                  src={`${product.img}`}
-                  className="img-products"
-                  alt="img-products"
-                />
-              </div>
-              <div className="data-products">
-                <div className="data-products-info">
-                  <p>{product.name}</p>
-                  <div className="price-div">
-                    <p className="final-price">${product.finalPrice}</p>
-                    <p>${product.price}</p>
+          <div>
+            {products.map((product) => (
+              <div key={product.id} className="product-tag">
+                <div className="div-img">
+                  <img
+                    src={`${product.img}`}
+                    className="img-products"
+                    alt="img-products"
+                  />
+                </div>
+                <div className="data-products">
+                  <div className="data-products-info">
+                    <p className="product-name">{product.name}</p>
+                    <div className="price-div">
+                      <p className="final-price">${product.finalPrice}</p>
+                      <p className="price-no-offer">${product.price}</p>
+                    </div>
+                  </div>
+                  <div className="div-amount">
+                    <div
+                      className="icon-div"
+                      onClick={() => decrease(product.id)}
+                    >
+                      <AiOutlineMinus className="icon" />
+                    </div>
+
+                    <p>{product.amount}</p>
+
+                    <div
+                      className="icon-div"
+                      onClick={() => increase(product.id)}
+                    >
+                      <BsPlus className="icon" />
+                    </div>
                   </div>
                 </div>
-                <div className="div-amount">
-                  <div className="icon-div" onClick={() => decrease(product.id)}>
-                    <AiOutlineMinus
-                      className="icon"
-                    />
-                  </div>
-
-                  <p>{product.amount}</p>
-
-                  <div className="icon-div" onClick={() => increase(product.id)}>
-                    <BsPlus
-                      className="icon"
-                    />
-                  </div>
-                </div>
               </div>
-            </div>
-          ))}
-          <div className="purchase-data">
-            <h2 className="text-data">Shipping</h2>
-            <p className="price">$19</p>
+            ))}
           </div>
-          <div className="purchase-data">
-            <h2 className="text-data">Total</h2>
-            <p className="price">$148.98</p>
+
+          <div className="total-price-div">
+            <div className="purchase-data">
+              <h3 className="text-data">Shipping</h3>
+              <p className="price">$19</p>
+            </div>
+            <div className="purchase-data">
+              <h3 className="text-data">Total</h3>
+              <p className="price">$148.98</p>
+            </div>
           </div>
         </div>
       </section>
