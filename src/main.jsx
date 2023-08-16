@@ -2,16 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './style/index.css'
 import Footer from './components/Footer.jsx'
-import Checkot from './components/Checkot.jsx'
-import { Products } from './components/Products.jsx'
+import Content from './components/Content.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <section className='content'>
-      <Checkot/>
-    <Products/>
-    </section>
+    <Content/>
+    <div className="footer">
+      <Footer />
+    </div>
     
-    <Footer/>
   </React.StrictMode>,
 )

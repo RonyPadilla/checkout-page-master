@@ -14,8 +14,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.content {
-  display: flex;
+.footer{
+  margin-top: 5%;
+  margin-left: 40%;
 }
 
 a {

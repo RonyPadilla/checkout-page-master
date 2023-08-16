@@ -65,7 +65,7 @@ const Checkot = () => {
               </div>
             </div>
           </section>
-            <div style={{marginTop: '15px'}}>
+            <div style={{marginTop: '35px'}}>
             <input type="checkbox"  style={ {transform: 'scale(1.6)',marginLeft: '5px', marginRight: '10px'}}/> 
             <label>Save this information for next time</label>
           </div>
