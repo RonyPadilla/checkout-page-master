@@ -90,3 +90,6 @@ label{
   background-color: #f2994a;
   color: white;
 }
+
+@media (max-width: 768px) {
+}

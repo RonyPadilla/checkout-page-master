@@ -6,8 +6,8 @@ const Content = () => {
   return (
     <>
       <section className="content">
-        <Checkot />
-        <Products />
+        <Checkot className="checkot" />
+        <Products className="products"/>
       </section>
     </>
   );
