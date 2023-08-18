@@ -79,7 +79,7 @@ export const Products = () => {
                       <AiOutlineMinus className="icon" />
                     </div>
 
-                    <p>{product.amount}</p>
+                    <p className="product-amount">{product.amount}</p>
 
                     <div
                       className="icon-div"

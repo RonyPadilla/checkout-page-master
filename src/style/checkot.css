@@ -8,13 +8,6 @@
   margin-right: 10%;
 }
 
-.title-contact{
-  color: #4e5150;
-  font-size: 36px;
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-}
-
 h2{
   color: #333333;
   font-size: 18px;
@@ -92,4 +85,16 @@ label{
 }
 
 @media (max-width: 768px) {
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 70vw;
+    height: 80%;
+    margin-right: 10%;
+  }
+
+
 }
