@@ -86,15 +86,36 @@ label{
 
 @media (max-width: 768px) {
 
+
+  .text-contact-info{
+    margin-top: 5vh;
+  }
+
   .contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    width: 70vw;
+    width: 90vw;
     height: 80%;
-    margin-right: 10%;
+    margin-right: 0%;
   }
 
+  .input-contact {
+    width: 90%;
+  }
+
+  .input-country {
+    background-position: 4px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding-left: 28px;
+    height: 50px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    margin-right: 20px;
+  }
 
 }

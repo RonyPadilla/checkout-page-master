@@ -8,7 +8,7 @@ const Checkot = () => {
   return (
     <>
       <section className="contact">
-        <h2>Contact information</h2>
+        <h2 className="text-contact-info">Contact information</h2>
 
         <form action="#">
           <label>E-mail</label>
